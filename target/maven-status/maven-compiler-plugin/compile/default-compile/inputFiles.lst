@@ -1,0 +1,10 @@
+/home/facu/Escritorio/DjangoInfo/Informatorio/blogapirest/src/main/java/com/informatorio/blogapirest/model/Post.java
+/home/facu/Escritorio/DjangoInfo/Informatorio/blogapirest/src/main/java/com/informatorio/blogapirest/controller/ComentarioController.java
+/home/facu/Escritorio/DjangoInfo/Informatorio/blogapirest/src/main/java/com/informatorio/blogapirest/controller/PostController.java
+/home/facu/Escritorio/DjangoInfo/Informatorio/blogapirest/src/main/java/com/informatorio/blogapirest/model/Usuario.java
+/home/facu/Escritorio/DjangoInfo/Informatorio/blogapirest/src/main/java/com/informatorio/blogapirest/services/ComentarioService.java
+/home/facu/Escritorio/DjangoInfo/Informatorio/blogapirest/src/main/java/com/informatorio/blogapirest/services/UserService.java
+/home/facu/Escritorio/DjangoInfo/Informatorio/blogapirest/src/main/java/com/informatorio/blogapirest/BlogapirestApplication.java
+/home/facu/Escritorio/DjangoInfo/Informatorio/blogapirest/src/main/java/com/informatorio/blogapirest/services/PostService.java
+/home/facu/Escritorio/DjangoInfo/Informatorio/blogapirest/src/main/java/com/informatorio/blogapirest/controller/UsuarioController.java
+/home/facu/Escritorio/DjangoInfo/Informatorio/blogapirest/src/main/java/com/informatorio/blogapirest/model/Comentario.java

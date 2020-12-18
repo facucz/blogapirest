@@ -1,0 +1,10 @@
+com/informatorio/blogapirest/services/ComentarioService.class
+com/informatorio/blogapirest/services/PostService.class
+com/informatorio/blogapirest/model/Comentario.class
+com/informatorio/blogapirest/services/UserService.class
+com/informatorio/blogapirest/model/Post.class
+com/informatorio/blogapirest/BlogapirestApplication.class
+com/informatorio/blogapirest/controller/UsuarioController.class
+com/informatorio/blogapirest/model/Usuario.class
+com/informatorio/blogapirest/controller/ComentarioController.class
+com/informatorio/blogapirest/controller/PostController.class
