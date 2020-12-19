@@ -1,0 +1,412 @@
+{
+	"info": {
+		"_postman_id": "b44609e3-5883-41e6-b217-afc1355ff0d6",
+		"name": "Informatorio API Blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET SINGLE USER",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "dev.api.fooddy.io"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://pedidos-test.fooddy.io"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://pedidos-test.fooddy.io/tienda/indianapolis/carrito"
+					},
+					{
+						"key": "accept-language",
+						"value": "es-ES,es;q=0.9"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/usuario/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"usuario",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL USERS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/usuarios",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST CREATE USER",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"nombre\": \"Carlos\",\n        \"apellido\": \"Alcides\",\n        \"email\": \"carlos@hotmail.com\",\n        \"password\": \"carli123\",\n        \"ciudad\": \"Corrientes\",\n        \"provincia\": \"Corrientes\",\n        \"pais\": \"Argentina\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/usuarios",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET USERS FROM A CITY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/usuarios/Resistencia",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"usuarios",
+						"Resistencia"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT MODIFY USER",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": 3,\n        \"nombre\": \"Carlos Modificado\",\n        \"apellido\": \"Alcides Modificado\",\n        \"email\": \"carlos@hotmail.com\",\n        \"password\": \"carli123Modificado\",\n        \"fechaDeCreacion\": \"20/12/2019 Modificado\",\n        \"ciudad\": \"Corrientes Modificado\",\n        \"provincia\": \"Corrientes Modificado\",\n        \"pais\": \"Argentina Modificado\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/usuarios/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"usuarios",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE DELETE USER",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/usuario/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"usuario",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET USERS FROM A SPECIFIC DATE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL POSTS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST CREATE POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"titulo\": \"Post Postman\",\n        \"descripcion\": \"Post creado a traves de postman\",\n        \"contenido\": \"este es un post creado a traves de postman, a fines de testeo\",\n        \"autor\": {\n            \"id\": 2,\n            \"nombre\": \"Juan\",\n            \"apellido\": \"Perez\",\n            \"email\": \"jp@gmail.com\",\n            \"password\": \"juanpi12\",\n            \"fechaDeCreacion\": \"2020-12-14\",\n            \"ciudad\": \"Valparaiso\",\n            \"provincia\": \"Santiago\",\n            \"pais\": \"Chile\"\n        },\n        \"publicado\": false\n    }"
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT MODIFY POST",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\":1,\n        \"titulo\": \"Post Modificado\",\n        \"descripcion\": \"Post que ha sido modificado\",\n        \"contenido\": \"este es un post creado a traves de postman, que modifica a otro post\",\n        \"autor\": {\n            \"id\": 2,\n            \"nombre\": \"Juan\",\n            \"apellido\": \"Perez\",\n            \"email\": \"jp@gmail.com\",\n            \"password\": \"juanpi12\",\n            \"fechaDeCreacion\": \"2020-12-14\",\n            \"ciudad\": \"Valparaiso\",\n            \"provincia\": \"Santiago\",\n            \"pais\": \"Chile\"\n        },\n        \"publicado\": true\n    }"
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/posts/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE POST",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/posts/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"posts",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET UNPUBLISHED POSTS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL POST WITH A SPECIFICT WORD IN THE TITLE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/post/Post",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"post",
+						"Post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST CREATE COMENTARIO",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"autor\": {\n            \"id\": 2,\n            \"nombre\": \"Juan\",\n            \"apellido\": \"Perez\",\n            \"email\": \"jp@gmail.com\",\n            \"password\": \"juanpi12\",\n            \"fechaDeCreacion\": \"2020-12-15\",\n            \"ciudad\": \"Valparaiso\",\n            \"provincia\": \"Santiago\",\n            \"pais\": \"Chile\"\n        },\n        \"post\": {\n            \"id\": 2,\n            \"titulo\": \"Cosas\",\n            \"descripcion\": \"Post sobre cosas\",\n            \"contenido\": \"Las cosas son objetos\",\n            \"fechaDeCreacion\": \"2020-12-15\",\n            \"autor\": {\n                \"id\": 4,\n                \"nombre\": \"Juan\",\n                \"apellido\": \"Perez\",\n                \"email\": \"jp@gmail.com\",\n                \"password\": \"juanpi12\",\n                \"fechaDeCreacion\": \"2020-12-15\",\n                \"ciudad\": \"Valparaiso\",\n                \"provincia\": \"Santiago\",\n                \"pais\": \"Chile\"\n            },\n            \"publicado\": false\n        },\n        \"comentario\": \"Este es un comentario creado a traves de POST\"\n    }"
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/comentarios",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"comentarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL COMENTARIOS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/comentarios",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"comentarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE COMENTARIO",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/comentarios/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"comentarios",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
